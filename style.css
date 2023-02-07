@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior:auto;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  height: 58px;
+}
+
+/* Navigation Bar: Logo And Image */
+#logo {
+  margin: 34px 45px;
+  cursor: pointer;
+}
+#logo img {
+  height: 60px;
+  margin: 3px 6px;
+  cursor: pointer;
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Bree Serif", serif;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li {
+  color: white;
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: green;
+  background-color: white;
+  border-color:green ;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 200px;
+  height: 530px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("https://th.bing.com/th/id/OIP.vlRFPrFi4x530B2kH1ILRwHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 642px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  color:white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#home p {
+  color:white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight:700 ;
+}
+#home .btn:hover{
+  color: green;
+  background-color: white;
+  border-color: green;
+  font-family: sans-serif;
+  border-radius: 50px;
+}
+
+/* Services Section */
+
+
+#services-container .h-primary{
+  padding-top: 90px;
+
+}
+#services {
+  margin: 34px;
+  display: flex;
+  padding: 0 45px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 0px 35px;
+  border-radius: 23px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+  cursor: pointer;
+}
+
+/* Client Section */
+
+#client-section {
+  position: relative;
+  padding-bottom: 50px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("img12.webp") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-item {
+  padding: 34px;
+}
+
+#clients img {
+  height: 124px;
+  padding: 10px 30px;
+}
+
+/* Contact Section */
+
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("img13.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+  flex-direction: column;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+/* footer  */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+  font-size: 3.4rem;
+  padding: 12px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
